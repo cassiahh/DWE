@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8"> 
+    <title>Polinésia</title>
+    
+<!-- style -->
+
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+<!-- script -->
+
+  <script src="../js/jquery.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+<!-- função de validação do formulário -->
+<script>
+    function validateForm() {
+      var x = document.forms["myForm"]["fname"].value;
+      if (x == "") {
+        alert("O nome é obrigatório");
+        return false;
+      }
+    }
+  </script>
+
+</head>
+
+<body>
+  <header>
+    <h1>Estado das Ilhas Unidas da Polinésia</h1>
+    <h2>Bem Vindo</h2>
+  </header>
+    
+<!-- Menu-->
+  <div class="pos-f-t">
+    <div class="collapse" id="navbar">
+      <div class="bg-dark p-4">
+        <h4 class="text-white">Destaques:</h4>
+        <span class="text-muted"></span>
+        <ul>
+          <li><a href=”#”>página inicial</a></li>
+          <li><a href=”#”>notícias</a></li>
+          <li><a href=”#”>governo</a></li>
+          <li><a href=”#”>turismo</a></li>
+          <li><a href=”religiao.html”>religião</a></li>
+        </ul>
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+  </div>
+
+
+  <main>
+    <h2>Sítio Oficial do Governo</h2>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ...</p>
+
+    <section>
+      07
+      <h2>xxx</h2> 08
+      <article>
+        09
+        <h3>xxx</h3> 10
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+        11 </article>
+      12
+      <article>
+        13
+        <h3>xxx</h3> 14
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+        15 </article>
+      16 </section>
+    17
+    <section>
+      18
+      <h2>xxx</h2> 19
+      <article>
+        20
+        <h3>xxx</h3> 21
+        <p>CLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+        22 </article>
+      23
+      <article>
+        24
+        <h3></h3> 25
+        <p></p>
+
+
+        26 </article>
+      27 </section>
+    
+<!-- Contato -->
+    <div id="contato" class="container-fluid bg-grey">
+      <h2 class="text-center">CONTATO</h2>
+      <div class="row">
+        <div class="col-sm-5">
+          <p>Fale com um humano</p>
+          <p><span class="glyphicon glyphicon-map-marker"></span> Micronésia</p>
+          <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+          <p><span class="glyphicon glyphicon-envelope"></span> spam@micronesia.gov.mn</p>
+        </div>
+        
+<!--validação com JS -->
+          
+    <form name="myForm" action="#"
+    onsubmit="return validateForm()" method="post">
+    Name: <input type="text" name="fname">
+    <input type="submit" value="Submit">
+    </form>
+
+        <div class="col-sm-7 slideanim">
+          <div class="row">
+            <div class="col-sm-6 form-group">
+              <input class="form-control" id="name" name="name" placeholder="Nome" type="text" required>
+            </div>
+            <div class="col-sm-6 form-group">
+              <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+            </div>
+          </div>
+          <textarea class="form-control" id="comments" name="comments" placeholder="Comentários" rows="5"></textarea><br>
+          <div class="row">
+            <div class="col-sm-12 form-group">
+              <button class="btn btn-default pull-right" type="submit">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<!-- Google Maps -->
+    <h3>Micronésia no mapa</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {
+          lat: 33.366667,
+          lng: 126.533333
+        };
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChKyYGSl4ufDSDoq363YrAs&callback=initMap">
+    </script>
+
+  </main>
+  
+  <footer>
+    <p></p>
+    <p> </p>
+  </footer>
+
+</body>
+
+</html>
