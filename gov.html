@@ -2,28 +2,29 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="utf-8"> 
-    <title>Polinésia</title>
-    
-<!-- style -->
+  <meta charset="utf-8">
+  <title>Polinésia</title>
 
-  <link rel="stylesheet" type="text/css" href="estilo.css">
+  <!-- style -->
+
+  <link rel="stylesheet" type="text/css" href="css/estilo.css">
   <link href="../css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  
-<!-- script -->
 
+  <!-- script -->
+
+  <script src="js/script.js"></script>
   <script src="../js/jquery.js"></script>
   <script src="../js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
-<!-- função de validação do formulário -->
-<script>
+
+  <!-- função de validação do formulário -->
+  <script>
     function validateForm() {
       var x = document.forms["myForm"]["fname"].value;
       if (x == "") {
-        alert("O nome é obrigatório");
+        alert("O campo é obrigatório");
         return false;
       }
     }
@@ -33,138 +34,165 @@
 
 <body>
   <header>
-    <h1>Estado das Ilhas Unidas da Polinésia</h1>
-    <h2>Bem Vindo</h2>
-  </header>
-    
-<!-- Menu-->
-  <div class="pos-f-t">
-    <div class="collapse" id="navbar">
-      <div class="bg-dark p-4">
-        <h4 class="text-white">Destaques:</h4>
-        <span class="text-muted"></span>
-        <ul>
-          <li><a href=”#”>página inicial</a></li>
-          <li><a href=”#”>notícias</a></li>
-          <li><a href=”#”>governo</a></li>
-          <li><a href=”#”>turismo</a></li>
-          <li><a href=”religiao.html”>religião</a></li>
-        </ul>
+    <div class="col-sm-7">
+      <h1>Estado das Ilhas Unidas da Polinésia</h1>
+      <h2>Bem Vindo</h2>
+    </div>
+    <div class="logo">
+      <div class="row">
+        <div class="col-sm-3">
+          <span> <img src="img/bandeira.jpg"></span>
+        </div>
       </div>
     </div>
-    <nav class="navbar navbar-dark bg-dark">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+  </header>
+
+  <!-- Menu-->
+
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-8">
+
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
       </button>
-    </nav>
-  </div>
+            <a class="navbar-brand"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="gov.html">página inicial</a></li>
+              <li><a href="https://pt.wikipedia.org/wiki/Cidade_global#Estudos_do_GaWC">governo</a></li>
+              <li><a href="turismo.html">turismo</a></li>
+              <li><a href="religiao.html">religião</a></li>
+              <li><a href="#contato">contato</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
 
 
   <main>
     <h2>Sítio Oficial do Governo</h2>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ...</p>
+    <br>
 
     <section>
-      07
-      <h2>xxx</h2> 08
-      <article>
-        09
-        <h3>xxx</h3> 10
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-        11 </article>
-      12
-      <article>
-        13
-        <h3>xxx</h3> 14
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-        15 </article>
-      16 </section>
-    17
+      <div class="row">
+        <div class="col-sm-9">
+          <h3>Últimas notícias:</h3>
+          <article>
+            <h4>Economia</h4>
+            <p>Blá blá blá com o clássico Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod.</p>
+          </article>
+
+          <article>
+
+            <h4>Bolo de fubá cremoso</h4>
+            <p>Mais blá blá blá com ingredientes ovos, xícaras de leite, xícaras de açúcar, colheres de farinha de trigo, xícara de fubá, colheres de margarina, queijo ralado, colher de fermento em pó.</p>
+            <p>Em um liquidificador, misture todos os ingredientes até obter uma consistência cremosa. Despeje a massa em uma forma untada e polvilhada com farinha de trigo. Asse em forno médio, preaquecido, por 40 minutos. Sirva frio
+
+
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section>
-      18
-      <h2>xxx</h2> 19
+
+      <h3>Países Amigos</h3>
+      <article class="paises">
+        <a name="paises" id="paises"></a>
+        <h4>Signatários de Acordos Políticos de Paz e Cooperação Econômica</h4>
+
+
+        <div class="collapse" id="navbar">
+          <div class="bg-dark p-4">
+            <h4 class="text-white"></h4>
+            <span class="text-muted"></span>
+            <ul class="navigation">
+              <li><a href="http://www.brasil.gov.br/">Brasil</a></li>
+              <li><a href="http://www.canadainternational.gc.ca/ci-ci/index.aspx?lang=eng">Canadá</a></li>
+              <li><a href="https://europa.eu/european-union/index_pt">União Européia</a></li>
+              <li><a href="http://www.gov.cn/english/">China</a></li>
+            </ul>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        </nav>
+        </div>
+
+      </article>
+
       <article>
-        20
-        <h3>xxx</h3> 21
-        <p>CLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-        22 </article>
-      23
-      <article>
-        24
-        <h3></h3> 25
+
+        <h4></h4>
         <p></p>
 
 
-        26 </article>
-      27 </section>
-    
-<!-- Contato -->
-    <div id="contato" class="container-fluid bg-grey">
-      <h2 class="text-center">CONTATO</h2>
-      <div class="row">
-        <div class="col-sm-5">
-          <p>Fale com um humano</p>
-          <p><span class="glyphicon glyphicon-map-marker"></span> Micronésia</p>
-          <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
-          <p><span class="glyphicon glyphicon-envelope"></span> spam@micronesia.gov.mn</p>
-        </div>
-        
-<!--validação com JS -->
-          
-    <form name="myForm" action="#"
-    onsubmit="return validateForm()" method="post">
-    Name: <input type="text" name="fname">
-    <input type="submit" value="Submit">
-    </form>
+      </article>
+    </section>
 
-        <div class="col-sm-7 slideanim">
-          <div class="row">
-            <div class="col-sm-6 form-group">
-              <input class="form-control" id="name" name="name" placeholder="Nome" type="text" required>
-            </div>
-            <div class="col-sm-6 form-group">
-              <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-            </div>
+    <!-- Contato -->
+    <section id="contato">
+
+      <div class="container-fluid bg-grey">
+        <h2 class="text-center">Contato</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <p>Fale com um humano</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span> Polinésia</p>
+            <p><span class="glyphicon glyphicon-phone"></span> +00 666666666</p>
+            <p><span class="glyphicon glyphicon-envelope"></span> spam@polinesia.gov.pn</p>
           </div>
-          <textarea class="form-control" id="comments" name="comments" placeholder="Comentários" rows="5"></textarea><br>
-          <div class="row">
-            <div class="col-sm-12 form-group">
-              <button class="btn btn-default pull-right" type="submit">Enviar</button>
+
+          <!--validação com JS -->
+
+          <form name="myForm" action="#" onsubmit="return validateForm()" method="post">
+
+            <!-- formulario de contato -->
+            <div class="col-sm-7">
+              <div class="row">
+                <div class="col-sm-6 form-group">
+                  <input class="form-control" id="name" name="name" placeholder="Nome" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                  <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                </div>
+              </div>
+              <textarea class="form-control" id="comments" name="comments" placeholder="Comentário" rows="5"></textarea><br>
+              <div class="row">
+                <div class="col-sm-12 form-group">
+                  <button class="btn btn-default pull-right" type="submit">Send</button>
+                </div>
+              </div>
             </div>
-          </div>
         </div>
       </div>
-    </div>
 
-
-<!-- Google Maps -->
-    <h3>Micronésia no mapa</h3>
-    <div id="map"></div>
-    <script>
-      function initMap() {
-        var uluru = {
-          lat: 33.366667,
-          lng: 126.533333
-        };
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChKyYGSl4ufDSDoq363YrAs&callback=initMap">
-    </script>
+    </section>
 
   </main>
-  
+
   <footer>
-    <p></p>
-    <p> </p>
+    <p>Elaborado por Cássia Chin &amp; Arthur Thulli</p>
+    <p>Tema: País Fictício para DWE 2018, IFSP campus Campinas</p>
   </footer>
 
 </body>

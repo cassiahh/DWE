@@ -1,0 +1,208 @@
+/*
+Criar as seguintes páginas:
+(1)Início, onde ficará o conteúdo principal (normalmente, artigos)
+Sobre, (2)com informações sobre a autoria do site, tipo de conteúdo etc.
+Saiba mais, (3)com links para outros sites similares, referências a outros autores etc.
+(4)Contato, (a)com e-mail e (b)endereço físico da suposta empresa, além de um (c)formulário para entrar em contato
+
+Deve conter:
+(5)Código HTML5 validado
+(6)Estilização com CSS feito à mão ou com framework CSS (Bootstrap, W3.CSS etc.)
+(7)Links para páginas locais (usar endereços relativos - exemplo: minha-pasta/minha-pagina.html) e
+(8)remotas (usar endereços absolutos - exemplo: http://example.com/)
+(9)Imagens locais (ou seja, sem depender de internet). Usar endereços relativos.
+(10)Um ou mais menus animados
+(11)Uma ou mais interações do usuário com o site por meio de JavaScript.
+Pode ser alguma manipulação de DOM, validações de formulários que não sejam triviais o suficiente para fazer direto em HTML5 sem JS,
+ou algum cálculo dinâmico baseado em dados que o usuário digite.
+*/
+
+body {
+  font: 400 15px Lato, sans-serif;
+  line-height: 1.8;
+  color: #818181;
+  width: 99%;
+  margin-left: 0.5em;
+  margin-bottom: 0.5em;
+  padding-left: 0.05em;
+}
+
+main {
+  margin-left: 0.5em;
+  margin-bottom: 0.5em;
+  padding-left: 0.05em;
+}
+
+header {
+  background-color: #CD0000;
+  color: #FFF;
+}
+
+h1 {
+  color: #FFF;
+  margin-left: 0.5em;
+  margin-bottom: 0.5em;
+  padding-left: 0.05em;
+}
+
+h2 {
+  font-size: 24px;
+  color: #FFF;
+  font-weight: 600;
+  margin-left: 0.5em;
+  margin-bottom: 0.5em;
+  padding-left: 0.05em;
+}
+
+h3 {
+  margin-left: 0.5em;
+  margin-bottom: 0.5em;
+  padding-left: 0.05em;
+}
+
+h4 {
+  font-size: 19px;
+  line-height: 1.375em;
+  color: #303030;
+  font-weight: 400;
+  margin-left: 0.5em;
+  margin-bottom: 0.5em;
+  padding-left: 0.05em;
+}
+
+.navbar {
+  margin-bottom: 0;
+  background-color: #CD0000;
+  z-index: 9999;
+  border: 0;
+  font-size: 12px line-height: 1.42857143;
+  letter-spacing: 4px;
+  border-radius: 0;
+  font-family: Montserrat, sans-serif;
+}
+
+.navbar navbar-inverse, .collapse navbar-collapse {
+  color: #CD0000;
+  background-color: #FFF;
+}
+
+.navbar li a, .navbar .navbar-brand {
+  color: #FFF;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  color: #CD0000;
+  background-color: #FFF;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #FFF;
+  background-color: #FFF;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  text-decoration: none;
+}
+
+li a {
+  text-decoration: none;
+  color: darkgray;
+  margin-left: 30 px;
+  margin-bottom: 1 px;
+  padding: 15px 15 px;
+  background-color: #FFF;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #FFF;
+  text-decoration: none;
+}
+
+.logo img {
+  float: right;
+}
+
+.container-fluid {
+  padding: 60px 50px;
+}
+
+.bg-grey {
+  background-color: #f6f6f6;
+}
+
+ol {
+  margin-top: 30 px;
+  padding-bottom: 30 px;
+}
+
+.carousel-control.right, .carousel-control.left {
+  background-image: none;
+  color: #CD0000;
+}
+
+.carousel-indicators li {
+  border-color: #CD0000;
+}
+
+.carousel-indicators li.active {
+  background-color: #CD0000;
+}
+
+.slideanim {
+  visibility: hidden;
+}
+
+.slide {
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  visibility: visible;
+}
+
+#myCarousel {
+  margin-top: 1 em;
+  margin-left: 1 em;
+  margin-bottom: 1em;
+  padding-left: 0.05em;
+}
+
+#map {
+  margin-left: 0.5em;
+  height: 400px;
+  width: 98%;
+}
+
+section {
+  margin-left: 0.5em;
+  margin-bottom: 0.5em;
+  padding-left: 0.05em;
+}
+
+article {
+  margin-left: 0.5em;
+  margin-bottom: 0.5em;
+  padding-left: 0.05em;
+}
+
+.paises li {
+  list-style: none;
+  display: block;
+  text-decoration: none;
+}
+
+footer {
+  color: #FFF;
+  background-color: #CD0000;
+  margin-left: 0.5em;
+  padding-left: 0.05em;
