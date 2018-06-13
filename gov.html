@@ -22,13 +22,14 @@
   <!-- função de validação do formulário -->
   <script>
     function validateForm() {
-      var x = document.forms["myForm"]["fname"].value;
-      if (x == "") {
-        alert("O campo é obrigatório");
-        return false;
+        var c = document.forms["myForm"].elements["name"].value;
+	    var separado = c.split(" ");
+            if (separado.length == 1) {
+            alert("O nome completo é obrigatório");
+            return false;
       }
     }
-  </script>
+   </script>
 
 </head>
 
@@ -72,7 +73,6 @@
               <li><a href="#contato">contato</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-
             </ul>
           </div>
         </div>
@@ -94,18 +94,21 @@
           <h3>Últimas notícias:</h3>
           <article>
             <h4>Economia</h4>
-            <p>Blá blá blá com o clássico Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod.</p>
+            <p>Blá blá blá com o clássico Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+            <p>Blá blá blá com o clássico Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
           </article>
 
           <article>
-
-            <h4>Bolo de fubá cremoso</h4>
+            <h4>Política</h4>
             <p>Mais blá blá blá com ingredientes ovos, xícaras de leite, xícaras de açúcar, colheres de farinha de trigo, xícara de fubá, colheres de margarina, queijo ralado, colher de fermento em pó.</p>
-            <p>Em um liquidificador, misture todos os ingredientes até obter uma consistência cremosa. Despeje a massa em uma forma untada e polvilhada com farinha de trigo. Asse em forno médio, preaquecido, por 40 minutos. Sirva frio
-
-
-            </p>
+            <p>Em um liquidificador, misture todos os ingredientes até obter uma consistência cremosa. Despeje a massa em uma forma untada e polvilhada com farinha de trigo. Asse em forno médio, preaquecido, por 40 minutos. Sirva frio. É a receita do Bolo de fubá cremoso.</p>
+          </article>
+          <article>
+            <h4>Educação</h4>
+            <p>Obrigado, muito obrigado, agradecido, thank you, thanks, merci, gracias, grazie, grazie mille, danke, xiexie, valeu.</p>
+            <p>Especifique o valor do nome do servidor que foi usado quando você criou o Banco de Dados do Azure para MySQL anteriormente. Nosso servidor de exemplo mostrado é mydemoserver.mysql.database.azure.com. Use o nome de domínio totalmente qualificado (*.mysql.database.azure.com) conforme mostrado no exemplo. Siga as etapas na seção anterior para obter as informações da conexão, caso não se lembre do seu nome do servidor.</p>
+            <p>Digite o nome de usuário de logon do administrador do servidor fornecido na criação do Banco de Dados do Azure para MySQL anteriormente. Nosso nome de usuário de exemplo é myadmin@mydemoserver. Siga as etapas na seção anterior para obter as informações da conexão, caso não se lembre do nome do usuário. O formato é username@servername.</p>
+            
           </article>
         </div>
       </div>
@@ -170,7 +173,7 @@
             <div class="col-sm-7">
               <div class="row">
                 <div class="col-sm-6 form-group">
-                  <input class="form-control" id="name" name="name" placeholder="Nome" type="text" required>
+                  <input class="form-control" id="name" name="name" placeholder="Nome Completo" type="text" required>
                 </div>
                 <div class="col-sm-6 form-group">
                   <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>

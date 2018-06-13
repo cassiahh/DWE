@@ -191,8 +191,9 @@ section {
 
 article {
   margin-left: 0.5em;
-  margin-bottom: 0.5em;
+  margin-bottom: 1 em;
   padding-left: 0.05em;
+
 }
 
 .paises li {
